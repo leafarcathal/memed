@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+
+  hyperf-skeleton:
+    container_name: hyperf-skeleton
+    image: hyperf/hyperf:8.1-alpine-v3.16-swoole
+    working_dir: /app
+    entrypoint: [ "php", "bin/hyperf.php", "server:watch" ]
+    volumes:
+      - ./:/app
+    ports:
+      - "9501:9501"
