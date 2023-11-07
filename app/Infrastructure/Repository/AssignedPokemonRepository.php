@@ -2,7 +2,7 @@
 
 namespace App\Infrastructure\Repository;
 
-use App\Domain\Entity\AssignedPokemon;
+use App\Domain\Aggregate\AssignedPokemon;
 use App\Domain\Entity\Pokemon;
 use App\Domain\Entity\User;
 use App\Domain\Repository\AssignedPokemonRepositoryInterface;
